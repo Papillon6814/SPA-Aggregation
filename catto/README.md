@@ -1,6 +1,6 @@
 # catto
 
-> My insane catto project.
+> My Insane Catto
 
 ## Build Setup
 

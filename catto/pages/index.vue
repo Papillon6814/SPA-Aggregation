@@ -1,92 +1,127 @@
 <template>
-  <v-layout
-    column
-    justify-center
-    align-center
-  >
-    <v-flex
-      xs12
-      sm8
-      md6
-    >
-      <div class="text-center">
-        <logo />
-        <vuetify-logo />
+  <div class="container">
+    <div class="app-bar">
+      <div class="text">Catto</div>
+    </div>
+    <div class="content">
+      <img class="cattoPic"
+      src="../assets/catto.png" />
+      <div class="thisIsNotCat">
+        <span class="thisIsNot">
+          This is not
+        </span>
+        <span class="cat">
+          &nbsp;CAT
+        </span>
       </div>
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-            >
-              documentation
-            </a>.
-          </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              title="chat"
-            >
-              discord
-            </a>.
-          </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              title="contribute"
-            >
-              issue board
-            </a>.
-          </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-          >
-            Nuxt Documentation
-          </a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/inspire"
-          >
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-flex>
-  </v-layout>
+      <div class="butCatto">
+        <span class="but">
+          But
+        </span>
+        <span class="catto">
+          &nbsp;Catto
+        </span>
+      </div>
+    </div>
+    <div class="pics">
+    </div>
+    <div class="footer">
+    </div>
+  </div>
 </template>
 
-<script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
+<style>
+.app-bar {
+  position: relative;
+  top: 0;
+  left: 0;
 
-export default {
-  components: {
-    Logo,
-    VuetifyLogo
-  }
+  height: 70px;
+  width: 100vw;
+
+  background-color: #212121;
 }
-</script>
+
+.text {
+  color: #fff;
+  font-size: 25px;
+
+  width: 10%;
+  height: 100%;
+
+  text-align: center;
+  line-height: 65px;
+}
+
+.content {
+  position: relative;
+
+  background: #d0a36a;
+
+  width: 100%;
+  height: 550px;
+}
+
+.cattoPic {
+  position: relative;
+
+  height: 80%;
+
+  left: 50%;
+  top: 10%;
+}
+
+/* ----------------------*/
+
+.thisIsNotCat {
+  position: absolute;
+
+  left: 10%;
+  top: 25%;
+}
+
+.thisIsNot {
+  font-size: 70px;
+  color: #fff;
+}
+
+.cat {
+  font-size: 90px;
+  color: #212121;
+}
+
+/* ----------------------*/
+
+.butCatto {
+  position: absolute;
+
+  left: 30%;
+  top: 50%;
+}
+
+.but {
+  font-size: 70px;
+  color: #fff;
+}
+
+.catto {
+  font-size: 90px;
+  color: #212121;
+}
+
+/* ----------------------*/
+
+.pics {
+  position: relative;
+
+  width: 100%;
+  height: 1000px;
+}
+
+.footer {
+  background: #ab7736;
+
+  height: 200px;
+  width: 100%;
+}
+</style>
