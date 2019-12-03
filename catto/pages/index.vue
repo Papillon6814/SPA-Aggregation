@@ -1,8 +1,10 @@
 <template>
   <div class="container">
+
     <div class="app-bar">
       <div class="text">Catto</div>
     </div>
+
     <div class="content">
       <img class="cattoPic"
       src="../assets/catto.png" />
@@ -23,7 +25,51 @@
         </span>
       </div>
     </div>
+
     <div class="pics">
+      <img class="boxNeko" src="../assets/neko4.jpg" />
+      <div class="inclinedNekoBox">
+        <img class="inclinedNeko"
+        src="../assets/neko2.jpg" />
+      </div>
+      <span class="boxCattoBoy">
+        Box Catto Boy
+      </span>
+      <span class="andAlso">
+        And Also
+      </span>
+
+      <div class="whatIsCatto">
+        <div class="WICTitle">
+          What is CATTO???
+        </div>
+        <span class="WIC">
+          Do you know this CATTO????<br>
+          Do you know this CATTO????<br>
+          Do you know this CATTO????<br>
+          Do you know this CATTO????<br>
+          Do you know this CATTO????<br>
+          Do you know this CATTO????<br>
+          Do you know this CATTO????
+        </span>
+      </div>
+
+      <img class="angel" src="../assets/neko1.jpg" />
+
+      <div class="whatIsAngel">
+        <div class="WIATitle">
+          What is CATTO???
+        </div>
+        <span class="WIA">
+          Do you know this CATTO????<br>
+          Do you know this CATTO????<br>
+          Do you know this CATTO????<br>
+          Do you know this CATTO????<br>
+          Do you know this CATTO????<br>
+          Do you know this CATTO????<br>
+          Do you know this CATTO????
+        </span>
+      </div>
     </div>
     <div class="footer">
     </div>
@@ -115,13 +161,127 @@
   position: relative;
 
   width: 100%;
-  height: 1000px;
+  height: 1650px;
 }
+
+.boxNeko {
+  position: absolute;
+
+  left: 8%;
+  top: 8%;
+
+  height: 600px;
+}
+
+.inclinedNekoBox {
+  position: absolute;
+
+  background: #fff;
+
+  padding: 7px;
+
+  left: calc(8% + 220px);
+  top: calc(8% + 450px);
+}
+
+.inclinedNeko {
+  height: 250px;
+}
+
+.boxCattoBoy {
+  position: absolute;
+
+  left: calc(8% + 380px);
+  top: calc(8% + 80px);
+
+  transform:rotate(90deg);
+
+  color: #212121;
+  font-size: 30px;
+}
+
+.andAlso {
+  position: absolute;
+
+  left: calc(8% + 520px);
+  top: calc(8% + 500px);
+
+  transform:rotate(90deg);
+
+  color: #212121;
+  font-size: 30px;
+}
+
+.whatIsCatto {
+  position: absolute;
+
+  top: 8%;
+  right: 0;
+
+  width: 50%;
+  height: 50%;
+}
+
+.WICTitle {
+  position: relative;
+
+  left: -40px;
+
+  color: #212121;
+  font-size: 30px;
+}
+
+.WIC {
+  position: relative;
+  top: 10px;
+  left: 10px;
+
+  color: #757575;
+  font-size: 30px;
+}
+
+.angel {
+  position: absolute;
+
+  left: 50%;
+  bottom: 50px;
+
+  height: 600px;
+}
+
+.whatIsAngel {
+  position: absolute;
+
+  bottom: -270px;
+  right: 55%;
+
+  width: 45%;
+  height: 50%;
+}
+
+.WIATitle {
+  position: relative;
+  left: 60px;
+
+  color: #212121;
+  font-size: 30px;
+}
+
+.WIA {
+  position: relative;
+  top: 10px;
+  left: 100px;
+
+  color: #757575;
+  font-size: 30px;
+}
+
+/* ----------------------*/
 
 .footer {
   background: #ab7736;
 
-  height: 200px;
+  height: 300px;
   width: 100%;
 }
 </style>
