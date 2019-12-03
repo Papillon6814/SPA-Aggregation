@@ -216,9 +216,9 @@
   position: absolute;
 
   top: 8%;
-  right: 0;
+  left: calc(15% + 520px);
 
-  width: 50%;
+  width: 40%;
   height: 50%;
 }
 
