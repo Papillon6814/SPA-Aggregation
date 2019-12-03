@@ -77,13 +77,17 @@
 </template>
 
 <style>
+body {
+  overflow-x: hidden;
+}
+
 .app-bar {
   position: relative;
   top: 0;
   left: 0;
 
   height: 70px;
-  width: 100vw;
+  width: 100%;
 
   background-color: #212121;
 }
