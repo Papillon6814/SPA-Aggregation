@@ -1,10 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title> I N U </title>
+    <title> inu図鑑 </title>
   </head>
 
   <body>
-    index screen
+    <table class="table text-center">
+      <tr>
+        <th class="text-center">犬id</th>
+        <th class="text-center">名前</th>
+      </tr>
+      @foreach($inus as $inu)
+      <tr>
+        <td>
+          <a href="/inu/{{ $inu->id }}/edit">
+            {{ $inu->id }}
+          </a>
+        </td>
+        <td>{{ $inu->name }}</td>
+      </tr>
+      @endforeach
+    </table>
   </body>
 </html>

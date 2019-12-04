@@ -11,7 +11,7 @@
 |
 */
 
-//use App\Http\Controllers;
+use App\Http\Controllers;
 
 Route::get('/', function () {
     return view('welcome');
