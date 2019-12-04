@@ -15,6 +15,7 @@ class CreateInusTable extends Migration
     {
         Schema::create('inus', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('name', 30);
             $table->timestamps();
         });
     }
