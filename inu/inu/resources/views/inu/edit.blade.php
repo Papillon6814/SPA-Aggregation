@@ -5,8 +5,8 @@
   </head>
   <body>
     INU戒名
-    <form action="inu/{{ $inu->id }}" method="post">
-      <input type="hidden" name="_method" value="PUT" />
+    <form action="/inu/{{ $inu->id }}/post" method="post">
+      {{-- <input type="hidden" name="_method" value="POST" /> --}}
       <input type="hidden" name="_token" value="{{ csrf_token() }}" />
 
       <div class="form-group">

@@ -23,4 +23,9 @@ class InuController extends Controller
         // 取得した値をviewに渡す
         return view('inu/edit', compact('inu'));
     }
+
+    public function name($id, Request $request) {
+        Inu::where('id', $id)
+             ->update(['name' => $request->name ]);
+    }
 }

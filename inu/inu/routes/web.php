@@ -12,9 +12,11 @@
 */
 
 use App\Http\Controllers;
+use Illuminate\Http\Request;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
 Route::resource('inu', 'InuController');
+Route::post('/inu/{id}/post', 'InuController@name');
